@@ -7,3 +7,5 @@ function About() {
         <div>ToDo</div>
     )
 }
+
+export default About;

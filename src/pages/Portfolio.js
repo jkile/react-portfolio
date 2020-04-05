@@ -1,17 +1,10 @@
 import React from "react";
+import Navbar from "../components/Navbar";
 
 function Portfolio() {
 
     return (
         <div>
-            <div class="navbar">
-                <ul class="nav-items">
-                    <li class="home-nav"><a href="index.html">Home</a></li>
-                    <li class="about-nav"><a href="about.html">About</a></li>
-                    <li class="portfolio-nav"><a href="portfolio.html">Portfolio</a></li>
-                    <li class="contact-nav"><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
             <div class="portfolio-container">
                 <h1 class="portfolio-title">Portfolio</h1>
                 <div class="project-container">
@@ -24,7 +17,7 @@ function Portfolio() {
                         function that pulls in a csv which is then parsed and added to a MySql database. The data is then pulled
                         from the database and used to generate the map as well as the three individual charts for each state
                         that were made with ChartJs.
-            </p>
+                    </p>
                     <h3 class="project-subtitle">Technology Used</h3>
                     <ul class="project-list">
                         <li>Javascript</li>
@@ -48,7 +41,7 @@ function Portfolio() {
                     <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis asperiores
                         ipsum tempora nihil, fuga maxime. Provident vel esse nostrum? Doloribus alias est sint, beatae et veniam
                         aut velit quam quo.
-            </p>
+                    </p>
                     <h3 class="project-subtitle">Technology Used</h3>
                     <ul class="project-list">
                         <li>Tailwind.css</li>
