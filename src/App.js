@@ -4,6 +4,7 @@ import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer"
 import {
   BrowserRouter as Router,
   Switch,
@@ -13,7 +14,7 @@ import "./reset.css";
 import './App.scss';
 
 
-function App(props) {
+function App() {
   return (
       <Router>
         <div>
@@ -24,6 +25,7 @@ function App(props) {
             <Route path="/portfolio" component={Portfolio} />
             <Route path="/contact" component={Contact} />
           </Switch>
+          <Footer />
         </div>
       </Router>
   );

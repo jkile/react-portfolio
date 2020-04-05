@@ -12,8 +12,6 @@ function Home() {
             <div className="spacer-block" />
             <CardsContainer />
             <ContactCard />
-            <footer>
-            </footer>
         </div>
     )
 }

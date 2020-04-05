@@ -2,7 +2,7 @@ import React from "react";
 
 function CardsContainer() {
 
-
+    
     return (
         <div className="cards-container">
             <div className="technology-container">

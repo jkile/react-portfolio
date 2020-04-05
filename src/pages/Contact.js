@@ -5,11 +5,7 @@ function Contact() {
 
 
     return (
-        <div>
-            <ContactCard/>
-            <footer />
-        </div>
-
+        <ContactCard/>
     )
 }
 

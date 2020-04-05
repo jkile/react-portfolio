@@ -222,7 +222,7 @@ $padding-xl: 15rem;
 }
 .contact-container{
     background-color: $dark-color;
-    height: 90vh;
+    height: 81.35vh;
 }
 .contact-header{
     font-size: 3em;
@@ -286,15 +286,13 @@ footer{
     height: 10vh;
     background-color: $accent-color;
 }
-.portfolio-container{
-    width: 100vw;
-    background-color: $secondary-color;
-}
 
 .portfolio-container{
     display: flex;
     flex-direction: column;
     padding-bottom: 2rem;
+    width: 100vw;
+    background-color: $secondary-color;
     .portfolio-title{
         font-family: $primary-font;
         font-size: 40px;
@@ -355,12 +353,16 @@ footer{
         color: $dark-color;
     }
 }
+.portfolio-bottom-container{
+    background-color: $secondary-color;
+}
 
 .github-header{
     font-family: $primary-font;
     color: $light-color;
     font-size: 35px;
     margin: 3rem;
+    margin-top: 0;
     text-align: center;
 }
 
@@ -372,6 +374,8 @@ footer{
     font-size: 18px;
     color: $dark-color;
     margin: auto;
+    margin-bottom: 1rem;
+    margin-top: -2rem;
     background-color: $light-color;
     transition: 0.5s;
     border: none;
