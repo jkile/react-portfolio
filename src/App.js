@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
@@ -8,36 +7,25 @@ import Navbar from "./components/Navbar";
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import "./reset.css";
 import './App.scss';
 
 
-function App() {
+function App(props) {
   return (
-    <div className="App">
       <Router>
         <div>
-          <Navbar />
+        <Navbar />
           <Switch>
-            <Route exact path="/">
-              <Home/>
-            </Route>
-            <Route path="/about">
-              <About />
-            </Route>
-            <Route path="/portfolio">
-              <Portfolio />
-            </Route>
-            <Route path="/contact">
-              <Contact/>
-            </Route>
+            <Route exact path="/" component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/portfolio" component={Portfolio} />
+            <Route path="/contact" component={Contact} />
           </Switch>
         </div>
       </Router>
-    </div>
   );
 }
 

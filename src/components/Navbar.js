@@ -7,7 +7,6 @@ import {
 function Navbar() {
 
     return (
-        <Router>
             <div className="navbar">
                 <ul className="nav-items">
                     <li className="home-nav"><Link to="/">Home</Link></li>
@@ -16,7 +15,6 @@ function Navbar() {
                     <li className="contact-nav"><Link to="/contact">Contact</Link></li>
                 </ul>
             </div>
-        </Router>
     )
 }
 
