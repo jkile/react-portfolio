@@ -8,7 +8,8 @@ import { useMediaQuery } from "react-responsive";
 
 function Navbar(props) {
     const isTabletOrMobile = useMediaQuery({query: "(max-width: 768px"});
-    if(isTabletOrMobile){
+    const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' });
+    if(isTabletOrMobile || (isTabletOrMobile && isRetina)){
         return (
             <div className="navbar">
                 <Menu right>
