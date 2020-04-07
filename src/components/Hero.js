@@ -1,4 +1,5 @@
-import React from "react"
+import React from "react";
+import { Link } from "react-router-dom";
 
 function Hero() {
 
@@ -13,7 +14,7 @@ function Hero() {
                 </h2>
             <p className="hero-description">Here is more information about me that is relatively succinct. Isn't this
                     interesting? Please Hire me. Please.</p>
-            <button className="work-anchor">Take a look at my work</button>
+            <button className="work-anchor"><Link to="/portfolio" style={{ textDecoration: 'none' }}>Take a look at my work</Link></button>
         </div>
     )
 }

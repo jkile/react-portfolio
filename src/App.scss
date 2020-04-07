@@ -48,12 +48,15 @@ $padding-xl: 15rem;
 
 .navbar{
     background-color: $accent-color;
-    height: 6rem;
+    height: 4rem;
     position: sticky;
     width: 100vw;
     top: 0px;
     left: 0px;
     z-index: 3;
+    @media(min-width: $breakpoint-sm){
+        height: 6rem;
+    }
 }
 
 .nav-items{
@@ -91,19 +94,24 @@ $padding-xl: 15rem;
 .hero-title{
     align-self: center;
     justify-self: center;
-    margin-top: 10rem;
+    margin-top: 5rem;
     font-family: $primary-font;
-    font-size: 3.75rem;
+    font-size: 2.75rem;
     color: white;
+
+    @media(min-width: $breakpoint-sm){
+        font-size: 3.75rem;
+        margin-top: 10rem;
+    }
 }
 .hero-subtitle{
     font-family: $seconday-font;
     color: white;
     text-align: center;
     margin-top: 1rem;
-    font-size: 2rem;
-    @media (min-width: $breakpoint-md){
-        font-size: 25px;
+    font-size: 1.5rem;
+    @media (min-width: $breakpoint-sm){
+        font-size: 2rem;
     }
 
 }
@@ -111,9 +119,12 @@ $padding-xl: 15rem;
     justify-self: center;
     text-align: center;
     font-family: $primary-font;
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: white;
     margin: 1rem;
+    @media(min-width: $breakpoint-sm){
+        font-size: 1.3rem;
+    }
 }
 .work-anchor{
     height: 4rem;
@@ -228,21 +239,29 @@ $padding-xl: 15rem;
 }
 .contact-container{
     background-color: $dark-color;
-    height: 81.35vh;
+    height: 82.65vh;
     overflow: auto;
 }
 .contact-header{
     font-size: 3em;
     font-family: $primary-font;
     color: $light-color;
-    padding-top: 4rem;
+    padding-top: 1.5rem;
     text-align: center;
-    padding-bottom: 4rem;
+    padding-bottom: 1.5rem;
+    @media(min-width: $breakpoint-sm){
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
 }
 .contact-form{
     @include card();
     background-color: $light-color;
     margin: auto;
+    @media(min-width: $breakpoint-sm){
+        width: 600px;
+        height: 500px;
+    }
 }
 form{
     padding: 1rem;
@@ -268,6 +287,9 @@ form{
     margin: .5rem;
     border: none;
     padding: .25rem;
+    @media(min-width: $breakpoint-sm){
+        height: 300px;
+    }
 }
 #messageBody:focus{
     box-shadow: 0px 0px 1px 1px $secondary-color;
@@ -283,6 +305,12 @@ form{
     border-radius: 5px;
     color: white;
     transition: 0.5s;
+    -webkit-appearance: none;
+    @media(min-width: $breakpoint-sm){
+        width: 5rem;
+        height: 3rem;
+        font-size: 1rem;
+    }
 }
 #submit:hover{
     box-shadow: 1px 1px 3px black;
@@ -290,9 +318,11 @@ form{
     color: $light-color;
 }
 footer{
-    height: 10vh;
+    height: 3rem;
     background-color: $accent-color;
-    z-index: 3;
+    @media(min-width: $breakpoint-sm){
+        height: 6rem;
+    }
 }
 
 .portfolio-container{
@@ -401,11 +431,11 @@ footer{
 }
 
 .bm-burger-button {
-    position: fixed;
-    width: 30px;
-    height: 24px;
-    left: 85vw;
-    top: 36px;
+    position: absolute;
+    width: 26px;
+    height: 20px;
+    left: 89vw;
+    top: 22px;
   }
   
   /* Color/shape of burger icon bars */
