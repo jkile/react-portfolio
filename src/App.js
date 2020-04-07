@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState, useContext } from "react";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer"
+import Footer from "./components/Footer";
+import MainProvider from "./components/MainProvider";
 import {
   BrowserRouter as Router,
   Switch,
@@ -13,12 +14,13 @@ import {
 import "./reset.css";
 import './App.scss';
 
-
 function App() {
+
   return (
+    <MainProvider>
       <Router>
         <div>
-        <Navbar/>
+          <Navbar />
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
@@ -28,6 +30,8 @@ function App() {
           <Footer />
         </div>
       </Router>
+    </MainProvider>
+
   );
 }
 

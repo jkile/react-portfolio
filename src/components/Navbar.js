@@ -1,23 +1,26 @@
-import React from "react";
+import React, { useState, useEffect, useContext } from "react";
 import {
     BrowserRouter as Router,
     Link
 } from "react-router-dom";
 import { slide as Menu } from "react-burger-menu";
 import { useMediaQuery } from "react-responsive";
+import MainContext from "./Context";
 
-function Navbar(props) {
-    const isTabletOrMobile = useMediaQuery({query: "(max-width: 768px"});
-    const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' });
-    if(isTabletOrMobile || (isTabletOrMobile && isRetina)){
+function Navbar() {
+    const isTabletOrMobile = useMediaQuery({query: "(max-width: 48em)"});
+    const ctx = useContext(MainContext);
+
+    if(isTabletOrMobile){
+
         return (
             <div className="navbar">
-                <Menu right>
-                    <ul className="nav-items">
-                        <li className="home-nav"><Link to="/">Home</Link></li>
-                        <li className="about-nav"><Link to="/about">About</Link></li>
-                        <li className="portfolio-nav"><Link to="/portfolio">Portfolio</Link></li>
-                        <li className="contact-nav"><Link to="/contact">Contact</Link></li>
+                <Menu right isOpen={ctx.isMenuOpen} onStateChange={(state) => ctx.stateChangeHandler(state)}>
+                    <ul className="nav-items" >
+                        <li className="home-nav"><Link to="/" onClick={ctx.toggleMenu}>Home</Link></li>
+                        <li className="about-nav"><Link to="/about" onClick={ctx.toggleMenu}>About</Link></li>
+                        <li className="portfolio-nav"><Link to="/portfolio" onClick={ctx.toggleMenu}>Portfolio</Link></li>
+                        <li className="contact-nav"><Link to="/contact" onClick={ctx.toggleMenu}>Contact</Link></li>
                     </ul>
                 </Menu>
             </div>
