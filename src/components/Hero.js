@@ -2,8 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Hero() {
-
-
+    
     return (
         <div className="hero">
             <h1 className="hero-title">
@@ -14,7 +13,7 @@ function Hero() {
                 </h2>
             <p className="hero-description">Here is more information about me that is relatively succinct. Isn't this
                     interesting? Please Hire me. Please.</p>
-            <button className="work-anchor"><Link to="/portfolio" style={{ textDecoration: 'none' }}>Take a look at my work</Link></button>
+            <Link to="/portfolio" className="link"><button className="work-anchor">Take a look at my work</button></Link>
         </div>
     )
 }

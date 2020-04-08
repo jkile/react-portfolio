@@ -1,8 +1,5 @@
-import React, { useState, useEffect, useContext } from "react";
-import {
-    BrowserRouter as Router,
-    Link
-} from "react-router-dom";
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import { slide as Menu } from "react-burger-menu";
 import { useMediaQuery } from "react-responsive";
 import MainContext from "./Context";
