@@ -86,9 +86,8 @@ $padding-xl: 15rem;
     display: flex;
     flex-direction: column;
     background-color: $primary-color;
-    height: 60vh;
+    height: 42rem;
     width: 100vw;
-
 }
 
 .hero-title{
@@ -482,6 +481,7 @@ footer{
   
   .bm-item {
     display: inline-block;
+    outline: none;
   }
   
   .bm-overlay {
@@ -489,3 +489,39 @@ footer{
     position: fixed;
     top: 0;
   }
+
+.about-container{
+    background-color: $primary-color;
+    height: 82.65vh;
+    display: flex;
+    flex-direction: column;
+}
+.about-header{
+    font-size: 3em;
+    font-family: $primary-font;
+    color: $light-color;
+    padding-top: 1.5rem;
+    text-align: center;
+    padding-bottom: 1.5rem;
+    @media(min-width: $breakpoint-sm){
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}
+.about-card{
+    width: 80vw;
+    background-color: $secondary-color;
+    border-radius: 15px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+.about-text{
+        font-family: $primary-font;
+        color: $light-color;
+        padding: 2rem;
+        text-align: left;
+        font-size: 18px;
+        line-height: 1.5rem;
+}
