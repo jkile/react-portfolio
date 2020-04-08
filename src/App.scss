@@ -492,7 +492,7 @@ footer{
 
 .about-container{
     background-color: $primary-color;
-    height: 82.65vh;
+    min-height: 82.65vh;
     display: flex;
     flex-direction: column;
 }
@@ -516,6 +516,8 @@ footer{
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem;
+    flex-basis: content;
+
 }
 .about-text{
         font-family: $primary-font;

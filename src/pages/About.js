@@ -19,6 +19,7 @@ function About() {
                     development needs or the new Thundercat album, I'd love to hear from you and look forward
                     to building a relationship!
                 </p>
+                <div></div>
             </div>
         </div>
     )
