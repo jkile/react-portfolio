@@ -9,7 +9,8 @@ function Home() {
     return (
         <div>
             <Hero />
-            <div className="spacer-block" />
+            <div className="spacer-block">
+            </div>
             <CardsContainer />
             <ContactCard />
         </div>

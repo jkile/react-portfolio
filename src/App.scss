@@ -5,7 +5,7 @@ $accent-color: #F48256;
 $primary-color: #95ADBE;
 $secondary-color: #574F7D;
 $dark-color: #4F3A65;
-$light-color: rgb(220, 238, 231);
+$light-color: rgb(205, 226, 218);
 
 $primary-font: 'Avenir Next';
 $seconday-font: 'Work Sans';
@@ -31,7 +31,7 @@ $padding-xl: 15rem;
 }
 
 @mixin cardHeader(){
-    color: $secondary-color;
+    color: $dark-color;
     align-self: center;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
@@ -125,6 +125,10 @@ $padding-xl: 15rem;
     @media(min-width: $breakpoint-sm){
         font-size: 1.3rem;
     }
+}
+.hero-description-container{
+    align-self: center;
+    max-width: 70vw;
 }
 .work-anchor{
     height: 4rem;
@@ -233,6 +237,18 @@ $padding-xl: 15rem;
     background-color: $primary-color;
 
 }
+.skills-list{
+    padding: 2rem;
+    color: white;
+    font-family: $primary-font;
+    font-size: 1.25rem;
+    font-weight: 500;
+    li{
+        padding-bottom: 1rem;
+    }
+}
+
+
 .social-container{
     @include  cardContainer();
 }
@@ -243,6 +259,25 @@ $padding-xl: 15rem;
     background-color: $dark-color;
     @include card();
 }
+.social-list{
+    padding: 2rem;
+    font-family: $primary-font;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+    li{
+        padding-bottom: 1rem;
+        a{
+            text-decoration: none;
+            color: white;
+            transition: .5s;
+        }
+        a:hover{
+            color: $primary-color;
+        }
+    }
+}
+
 .contact-container{
     background-color: $dark-color;
     height: 82.65vh;
