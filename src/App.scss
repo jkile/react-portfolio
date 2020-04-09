@@ -5,7 +5,7 @@ $accent-color: #F48256;
 $primary-color: #95ADBE;
 $secondary-color: #574F7D;
 $dark-color: #4F3A65;
-$light-color: #DFF0EA;
+$light-color: rgb(220, 238, 231);
 
 $primary-font: 'Avenir Next';
 $seconday-font: 'Work Sans';
@@ -79,13 +79,14 @@ $padding-xl: 15rem;
         transition: 0.5s;
     }
     a:hover{
-        color: $dark-color
+        color: $dark-color;
+        font-size: 2.1rem;
     }
 }
 .hero{
     display: flex;
     flex-direction: column;
-    background-color: $primary-color;
+    background-color: $light-color;
     height: 42rem;
     width: 100vw;
 }
@@ -96,7 +97,7 @@ $padding-xl: 15rem;
     margin-top: 5rem;
     font-family: $primary-font;
     font-size: 2.75rem;
-    color: white;
+    color: $dark-color;
 
     @media(min-width: $breakpoint-sm){
         font-size: 3.75rem;
@@ -105,7 +106,7 @@ $padding-xl: 15rem;
 }
 .hero-subtitle{
     font-family: $seconday-font;
-    color: white;
+    color: $dark-color;
     text-align: center;
     margin-top: 1rem;
     font-size: 1.5rem;
@@ -119,7 +120,7 @@ $padding-xl: 15rem;
     text-align: center;
     font-family: $primary-font;
     font-size: 1rem;
-    color: white;
+    color: $dark-color;
     margin: 1rem;
     @media(min-width: $breakpoint-sm){
         font-size: 1.3rem;
@@ -135,16 +136,18 @@ $padding-xl: 15rem;
     justify-self: center;
     margin: 1rem;
     background-color: $light-color;
-    border: none;
+    border: 2px solid $dark-color;
     border-radius: 5px;
     transition: 0.5s;
     text-decoration: none;
+    color: $dark-color;
+
 }
 .link{
     align-self: center;
 }
 .work-anchor:hover{
-    box-shadow: 1px 1px 3px black;
+    //box-shadow: 1px 1px 3px black;
     background-color: $dark-color;
     color: $light-color;
 }
@@ -337,7 +340,7 @@ footer{
     .portfolio-title{
         font-family: $primary-font;
         font-size: 40px;
-        color: $light-color;
+        color: white;
         text-align: center;
         padding: 3rem;
     }
@@ -355,19 +358,19 @@ footer{
     margin-bottom: 2rem;
     .project-title{
         font-family: $primary-font;
-        color: $light-color;
+        color: white;
         font-size: 35px;
         padding: 1.5rem;
     }
     .project-subtitle{
         font-family: $primary-font;
-        color: $light-color;
+        color: white;
         padding: 1.5rem;
         font-size: 30px;
     }
     .project-description{
         font-family: $primary-font;
-        color: $light-color;
+        color: white;
         padding-left: 2.5rem;
         padding-right: 1.5rem;
         text-align: left;
@@ -379,7 +382,7 @@ footer{
         padding-right: 1.5rem;
         padding-bottom: 1.5rem;
         font-family: $primary-font;
-        color: $light-color;
+        color: white;
         font-size: 18px;
     }
     li{
@@ -387,7 +390,7 @@ footer{
     }
     a{
         text-decoration: none;
-        color: $light-color;
+        color: white;
         transition: 0.5s;
     }
     a:hover{
@@ -400,7 +403,7 @@ footer{
 
 .github-header{
     font-family: $primary-font;
-    color: $light-color;
+    color: white;
     font-size: 35px;
     margin: 3rem;
     margin-top: 0;
