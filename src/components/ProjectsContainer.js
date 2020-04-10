@@ -28,9 +28,7 @@ function ProjectsContainer() {
         },
         {
             projectName: "Pi Hub",
-            projectDescription: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis asperiores
-            ipsum tempora nihil, fuga maxime. Provident vel esse nostrum? Doloribus alias est sint, beatae et veniam
-            aut velit quam quo.`,
+            projectDescription: `Pi Hub is a lightweight GitHub like app to be hosted locally entirely on a Raspberry Pi. Made for personal use, the app allows you to SSH into the Pi and be able to push and pull git remotely and have all repositories be viewable in the GUI.`,
             projectTechnology: [
                 "Tailwind.css",
                 "Node.js",
